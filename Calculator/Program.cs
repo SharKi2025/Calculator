@@ -26,6 +26,8 @@ internal class Program
                     result = num1 - num2;
                     break;
                 case '/':
+                if (num2 == 0)
+                        throw new DivideByZeroException("Деление на ноль запрещено");
                     result = num1 / num2;
                     break;
                 case '*':
